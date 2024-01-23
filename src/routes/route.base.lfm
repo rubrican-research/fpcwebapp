@@ -1,0 +1,12 @@
+object RouterBase: TRouterBase
+  OldCreateOrder = False
+  Height = 216
+  HorizontalOffset = 342
+  VerticalOffset = 108
+  Width = 291
+  object router: TBrookURLRouter
+    Routes = <>
+    Left = 32
+    Top = 24
+  end
+end

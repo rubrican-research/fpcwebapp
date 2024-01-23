@@ -1,0 +1,20 @@
+inherited FilesrvRouter: TFilesrvRouter
+  OnCreate = DataModuleCreate
+  Height = 265
+  HorizontalOffset = 382
+  VerticalOffset = 101
+  Width = 291
+  inherited router: TBrookURLRouter
+    Routes = <    
+      item
+        Default = True
+        Pattern = '/'
+        OnRequest = routerRoutes0Request
+      end>
+    OnNotFound = routerNotFound
+  end
+  object BrookMIME: TBrookMIME[1]
+    Left = 112
+    Top = 24
+  end
+end

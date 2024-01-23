@@ -1,0 +1,10 @@
+inherited HomeRouter: THomeRouter
+  inherited router: TBrookURLRouter
+    Routes = <    
+      item
+        Default = True
+        Pattern = '/'
+        OnRequest = routerRoutes0Request
+      end>
+  end
+end
