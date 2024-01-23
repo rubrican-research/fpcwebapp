@@ -8,6 +8,7 @@ This project has only been possible because of the dedication and persistance of
 
 ## Requirements
 [Lazarus IDE](https://www.lazarus-ide.org/)
+
 Install the following packages in Lazarus in this order:
 1. [Rhl](https://github.com/maciejkaczkowski/rhl)
 2. [Brook Tardigrade](https://github.com/risoflora/brookframework). You will also need to install the dll/so for libsagui. Instructions are on their github page
