@@ -17,6 +17,6 @@ Documentation is coming soon.
 # Objective
 This project showcases wonderful the developer experience of building a complex application in FPC/Lazarus and to highlight its cross-platform capabilities. You can compile the code on Windows, Mac and Linux without having to tweak it too much. The final binary is blazingly fast and can run efficently on a single-core, 1GB RAM virtual machine. 
 
-As a language, Object Pascal compares favourably with other languages in terms of how easy it is to get started with it. Where it shines, afaik, it the inherent syntax structure that offers many ways to organize your code and navigate through different sections. It is orders of magnitude easier to figure out the logic in a large Object Pascal project (Lazarus, Delphi) than any others that I've delved into. 
+As a language, Object Pascal compares favourably with other languages in terms of how easy it is to get started with it. Where it shines, afaik, is in the inherent syntax structure that offers many ways to organize your code and navigate through different sections. It is orders of magnitude easier to figure out the logic in a large Object Pascal project (Lazarus, Delphi) than any others that I've delved into. 
 
 This project has only been possible because of the dedication and persistance of the FPC/Lazarus team, the amazing micro-services framework for FPC [Brook Tardigrade](https://github.com/risoflora/brookframework), the cryptography library [Rhl](https://github.com/maciejkaczkowski/rhl).
