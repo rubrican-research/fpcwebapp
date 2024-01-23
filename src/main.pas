@@ -14,7 +14,7 @@ type
   TWebServerGui = class(TForm)
 		  Button1: TButton;
 		  Label1: TLabel;
-		  Label2: TLabel;
+		  lblBackground: TLabel;
 		  lblUrl: TLabel;
 		  procedure Button1Click(Sender: TObject);
 		  procedure FormCreate(Sender: TObject);
@@ -67,7 +67,9 @@ end;
 procedure TWebServerGui.startServer;
 begin
 	myWebServer.StartServer;
-    lblUrl.Visible:=True;
+	label1.Visible:=True;
+	lblUrl.Visible:=True;
+
     lblUrl.Caption:= Format('%s:%d',['http://localhost', myWebServer.Port]);
     Button1.Caption:='Stop';
 end;
@@ -76,6 +78,7 @@ procedure TWebServerGui.stopServer;
 begin
 	myWebServer.StopServer;
     Button1.Caption:='Start';
+    label1.Visible:=false;
     lblUrl.Visible:=false;
 end;
 

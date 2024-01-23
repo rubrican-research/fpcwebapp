@@ -1,26 +1,26 @@
 object WebServerGui: TWebServerGui
-  Left = 557
+  Left = 354
   Height = 94
-  Top = 383
+  Top = 267
   Width = 381
-  Caption = 'Web Server'
+  Caption = 'LazBrook Web Server'
   ClientHeight = 94
   ClientWidth = 381
   OnCreate = FormCreate
   Position = poScreenCenter
   LCLVersion = '2.2.6.0'
-  object Label2: TLabel
+  object lblBackground: TLabel
     Left = 7
     Height = 80
     Top = 7
     Width = 367
     Align = alClient
     BorderSpacing.Around = 7
-    Caption = 'FPC Brook Web Server'
+    Caption = 'LazBrook Web Server'
     Font.CharSet = ANSI_CHARSET
-    Font.Color = clActiveBorder
+    Font.Color = 15918295
     Font.Height = -27
-    Font.Name = 'Arial'
+    Font.Name = 'Bahnschrift SemiBold SemiConden'
     Font.Pitch = fpVariable
     Font.Quality = fqProof
     Font.Style = [fsBold]
