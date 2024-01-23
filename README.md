@@ -2,7 +2,9 @@
 <img src="https://github.com/stanley643212/fpcwebapp/assets/33192595/5930b133-b41c-4948-9a6f-fd80f1655220" alt="drawing" width="120"/>
 
 # Barebones Web Server in FPC/Lazarus
-Building a full-featured webserver for an htmx based web application needs a simple and manageable server codebase. This project is to showcase the simplicity of the developer experience of doing so in FPC/Lazarus and to highlight the cross-platform capabilities of FPC. The final binary is blazingly fast and can run efficently on a single-core, 1GB RAM virtual machine. 
+Building a full-featured webserver for an htmx based web application needs a manageable server codebase = Easy to setup, easy to read, easy to refactor with easy/quick database access. Object Pascal is overlooked by reviewers and webdevs. It is probably because there are not many tutorial videos that showcase the wide capbabilities of the language rather than a flaw in the technology.
+
+This project is to showcase the simplicity of the developer experience of doing so in FPC/Lazarus and to highlight the cross-platform capabilities of FPC. The final binary is blazingly fast and can run efficently on a single-core, 1GB RAM virtual machine. As a language, Object Pascal compares favourably with other languages in terms of how easy it is to get started with it. Where it shines, afaik, it the inherent syntax structure that offers many ways to organize your code and navigate through different sections. It is orders of magnitude easier to figure out the logic in a large Object Pascal project (Lazarus, Delphi) than any others that I've delved into. 
 
 This project has only been possible because of the dedication and persistance of the FPC/Lazarus team, the amazing micro-services framework for FPC [Brook Tardigrade](https://github.com/risoflora/brookframework), the cryptography library [Rhl](https://github.com/maciejkaczkowski/rhl).
 
