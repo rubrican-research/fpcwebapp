@@ -1,4 +1,8 @@
 inherited HomeRouter: THomeRouter
+  Height = 216
+  HorizontalOffset = 323
+  VerticalOffset = 597
+  Width = 291
   inherited router: TBrookURLRouter
     Routes = <    
       item

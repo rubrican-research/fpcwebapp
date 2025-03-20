@@ -1,8 +1,8 @@
 inherited FilesrvRouter: TFilesrvRouter
   OnCreate = DataModuleCreate
   Height = 265
-  HorizontalOffset = 382
-  VerticalOffset = 101
+  HorizontalOffset = 322
+  VerticalOffset = 295
   Width = 291
   inherited router: TBrookURLRouter
     Routes = <    

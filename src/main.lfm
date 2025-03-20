@@ -1,17 +1,17 @@
 object WebServerGui: TWebServerGui
-  Left = 354
-  Height = 94
-  Top = 267
+  Left = 322
+  Height = 138
+  Top = 122
   Width = 381
   Caption = 'LazBrook Web Server'
-  ClientHeight = 94
+  ClientHeight = 138
   ClientWidth = 381
   OnCreate = FormCreate
   Position = poScreenCenter
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '3.8.0.0'
   object lblBackground: TLabel
     Left = 7
-    Height = 80
+    Height = 124
     Top = 7
     Width = 367
     Align = alClient
@@ -34,14 +34,14 @@ object WebServerGui: TWebServerGui
     Top = 19
     Width = 50
     Caption = 'Start'
-    OnClick = Button1Click
     TabOrder = 0
+    OnClick = Button1Click
   end
   object Label1: TLabel
     Left = 7
-    Height = 15
+    Height = 16
     Top = 7
-    Width = 33
+    Width = 35
     Caption = 'Open:'
     Font.Name = 'Arial'
     Font.Quality = fqProof
@@ -50,7 +50,7 @@ object WebServerGui: TWebServerGui
   end
   object lblUrl: TLabel
     Left = 48
-    Height = 15
+    Height = 16
     Top = 7
     Width = 21
     Caption = '___'

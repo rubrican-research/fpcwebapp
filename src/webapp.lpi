@@ -109,6 +109,9 @@
       </Optimizations>
     </CodeGeneration>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
       <LinkSmart Value="True"/>
       <Options>
         <Win32>
@@ -118,7 +121,7 @@
     </Linking>
     <Other>
       <Verbosity>
-        <ShoLineNum Value="True"/>
+        <ShowLineNum Value="True"/>
         <ShowCond Value="True"/>
       </Verbosity>
     </Other>
