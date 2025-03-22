@@ -21,7 +21,8 @@ type
      end;
 
 	 { TFilesrvRouter }
-     TFilesrvRouter = class(TRouterBase)
+     TFilesrvRouter = class(TDataModule)
+          router: TBrookURLRouter;
 		  BrookMIME: TBrookMIME;
 		  procedure DataModuleCreate(Sender: TObject);
 		  procedure routerNotFound(ASender: TObject; const ARoute: string;
@@ -144,7 +145,7 @@ procedure TFilesrvRouter.routerRoutes0Request(ASender: TObject;
 	 ARoute: TBrookURLRoute; ARequest: TBrookHTTPRequest;
 	 AResponse: TBrookHTTPResponse);
 begin
-     {==== /assets  FILE SERVER }
+     {==== /assets  FILE ServerFile }
      case upperCase(ARequest.Method) of
 
         // DELETE
@@ -160,7 +161,7 @@ begin
         'PATCH'  : patchFile(ARoute.Path, ARequest, AResponse);
 
         // POST
-        // The POST method submits an entity to the specified resource, often causing a change in state or side effects on the server.
+        // The POST method submits an entity to the specified resource, often causing a change in state or side effects on the ServerFile.
         'POST'   : uploadFile(ARoute.Path, ARequest, AResponse);
 
         // PUT
@@ -173,7 +174,7 @@ HEAD
 The HEAD method asks for a response identical to a GET request, but without the response body.
 
 CONNECT
-The CONNECT method establishes a tunnel to the server identified by the target resource.
+The CONNECT method establishes a tunnel to the ServerFile identified by the target resource.
 
 OPTIONS
 The OPTIONS method describes the communication options for the target resource.
@@ -334,7 +335,7 @@ begin
 
   	//resp.Headers.AddOrSet('Last-Modified', _fileETag.last_modified);
 
-  	{serve files from here}
+  	{ServerFile files from here}
   	try
        if shouldSendFile(_fileETag) then
        begin

@@ -5,47 +5,59 @@ unit route.base;
 interface
 
 uses
-	 Classes, SysUtils, BrookURLRouter, BrookHTTPResponse, BrookHTTPRequest;
+    Classes, SysUtils, BrookURLRouter, BrookHTTPResponse, BrookHTTPRequest,
+    BrookURLEntryPoints;
 
 type
+    { TRouterBase }
+    TRouterBase = class(TDataModule)
 
-	 { TRouterBase }
 
-  TRouterBase = class(TDataModule)
-		  router: TBrookURLRouter;
-	 private
-		  function getActive: boolean;
-		  procedure Setactive(const _value: boolean);
-	 public
-		property active: boolean read getActive write Setactive;
-        procedure sendHTML (var AResponse: TBrookHTTPResponse; const _html: string); // send successful content
-	 end;
+    end;
 
-var
-	 RouterBase: TRouterBase;
+    function routes(constref router: TBrookURLRouter): TStringArray;
+    function aboutRouter(constref router: TBrookURLRouter): string;
+    procedure sendHTML(constref AResponse: TBrookHTTPResponse; const _html: string);
+
 
 implementation
 
+function routes(constref router: TBrookURLRouter): TStringArray;
+var
+    r: TBrookURLRoute;
+    i: integer = 0;
+begin
+    Result := [];
+    SetLength(Result, router.Routes.Count);
+    for r in Router.Routes do
+    begin
+        Result[i] := r.Pattern;
+        Inc(i);
+    end;
+end;
+
+function aboutRouter(constref router: TBrookURLRouter): string;
+var
+    r: TBrookURLRoute;
+begin
+    Result := '';
+    for r in Router.Routes do
+    begin
+        Result := Result + Format('(%s) %s <br>', [r.Path, r.Pattern]);
+    end;
+end;
+
+procedure sendHTML(constref AResponse: TBrookHTTPResponse; const _html: string);
+begin
+    AResponse.Send(_html, 'text/html', 200);
+end;
+
 {$R *.lfm}
 
-{ TRouterBase }
 
-function TRouterBase.getActive: boolean;
-begin
-	Result:= router.Active;
-end;
 
-procedure TRouterBase.Setactive(const _value: boolean);
-begin
-	 if router.Active = _value then exit;
-     router.Active:= true;
-end;
 
-procedure TRouterBase.sendHTML(var AResponse: TBrookHTTPResponse;
-	 const _html: string);
-begin
-     AResponse.Send(_html, 'text/html', 200);
-end;
+
+
 
 end.
-

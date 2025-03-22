@@ -1,14 +1,41 @@
-inherited HomeRouter: THomeRouter
+object HomeRouter: THomeRouter
+  OldCreateOrder = False
   Height = 216
-  HorizontalOffset = 323
-  VerticalOffset = 597
+  HorizontalOffset = 1105
+  VerticalOffset = 431
   Width = 291
-  inherited router: TBrookURLRouter
+  object router: TBrookURLRouter
     Routes = <    
       item
+        Pattern = '/about'
+        Methods = [rmGET]
+        OnRequest = OnAbout
+      end    
+      item
         Default = True
-        Pattern = '/'
-        OnRequest = routerRoutes0Request
+        Pattern = '/start'
+        OnRequest = onDefault
       end>
+    Left = 16
+    Top = 24
+  end
+  object api1router: TBrookURLRouter
+    Routes = <    
+      item
+        Pattern = '/about'
+        Methods = [rmGET]
+        OnRequest = OnAbout
+      end    
+      item
+        Default = True
+        Pattern = '/one'
+        OnRequest = api1routerRoutes1Request
+      end    
+      item
+        Pattern = '/two'
+        OnRequest = api1routerRoutes2Request
+      end>
+    Left = 96
+    Top = 24
   end
 end

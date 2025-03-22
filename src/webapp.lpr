@@ -10,19 +10,31 @@ uses
 	 athreads,
 	 {$ENDIF}
 	 Interfaces, // this includes the LCL widgetset
-	 Forms, main, page.home, route.base, websrv,
+	 Forms, form.main, page.home, route.base, server.web, server.stub,
      route.home, route.filesrv, pages;
 
 {$R *.res}
 
 begin
-	 RequireDerivedFormResource:=True;
+    server.web.serverName  := 'QATree User Module';
+    server.web.serverID    := 'V1.0';
+    server.web.serverAbout := 'This microserver handles user authentication, user management';
+
+	RequireDerivedFormResource:=True;
 	Application.Scaled:=True;
-	 Application.Initialize;
-	 Application.CreateForm(TWebServerGui, WebServerGui);
-	 Application.CreateForm(TRouterBase, RouterBase);
-	 Application.CreateForm(THomeRouter, HomeRouter);
-	 Application.CreateForm(TFilesrvRouter, FilesrvRouter);
+	Application.Initialize;
+    {$IFNDEF CONSOLEAPP}
+	Application.CreateForm(TWebServerGui, WebServerGui);
+    {$ENDIF}
+
+	Application.CreateForm(THomeRouter, HomeRouter);
+	Application.CreateForm(TFilesrvRouter, FilesrvRouter);
+
+    {$IFDEF CONSOLEAPP}
+    server.web.startServer();
+    writeln(Application.Title + ' started.' );
+    writeln('Serving ' + server.web.serverURL);
+    {$ENDIF}
 	 Application.Run;
 end.
 

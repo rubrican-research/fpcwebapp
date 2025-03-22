@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Debug"/>
+    <Units>
+      <Unit>
+        <Filename Value="testwebapp.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="test\gui\test.gui.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="5" Y="7"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="server.web.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Webserver"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="R:\Apps\Lazarus\3.8\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="1955"/>
+        <CursorPos X="3" Y="1988"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\fpcunit\guitestrunner.pas"/>
+        <UnitName Value="GuiTestRunner"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="1140"/>
+        <CursorPos X="11" Y="1166"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <UnitName Value="LazFileUtils"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="46"/>
+        <CursorPos Y="16"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="R:\Apps\Lazarus\3.8\fpc\3.2.2\source\rtl\win\syswinh.inc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="12"/>
+        <CursorPos X="2" Y="23"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pages\page.home.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="pages\pages.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="routes\route.base.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="routes\route.base.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RouterBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="routes\route.filesrv.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="routes\route.filesrv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FilesrvRouter"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="10" Y="21"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="routes\route.home.lfm"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="routes\route.home.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="HomeRouter"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="13">
+      <Position>
+        <Filename Value="testwebapp.lpr"/>
+        <Caret Line="15" Column="5"/>
+      </Position>
+      <Position>
+        <Filename Value="testwebapp.lpr"/>
+        <Caret Line="16"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\fpcunit\guitestrunner.pas"/>
+        <Caret TopLine="1140"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\fpcunit\guitestrunner.pas"/>
+        <Caret Line="1166" Column="11" TopLine="1140"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="880" Column="3" TopLine="878"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\fpc\3.2.2\source\rtl\win\syswinh.inc"/>
+        <Caret Line="23" Column="2"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="897" Column="67" TopLine="878"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="16"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="196" TopLine="175"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="16"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="196" TopLine="175"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="16"/>
+      </Position>
+      <Position>
+        <Filename Value="R:\Apps\Lazarus\3.8\components\lazutils\lazfileutils.pas"/>
+        <Caret Line="196" TopLine="184"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
